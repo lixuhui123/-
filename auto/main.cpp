@@ -1,7 +1,7 @@
  
 #include <iostream>
 using namespace std;
-int main1()
+int main()
 {
 	 
 	int arr[] = { 4,5,6,6,82,8 };
@@ -14,6 +14,8 @@ int main1()
 	//	e *= 2;
 	for (auto i : arr)
 		cout << i << " ";
+	int x = 0;
+	auto &f = &x;
 	system("pause");
 	return 0;
 }

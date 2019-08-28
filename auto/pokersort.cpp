@@ -82,7 +82,7 @@ void insertsort(Poker* src, int n)
 		src[j] = tmp;
 	}
 }
-int main()
+int main222()
 {
  	Poker p;
 	while (1)
