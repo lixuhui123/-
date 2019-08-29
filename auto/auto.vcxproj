@@ -85,6 +85,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -117,6 +118,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="homework1.cpp" />
+    <ClCompile Include="homework3.cpp" />
+    <ClCompile Include="honework2.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pokersort.cpp" />
   </ItemGroup>
