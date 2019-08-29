@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <cstdio>
 using namespace std;
 struct Poker
@@ -29,8 +29,10 @@ void inpointpoker(Poker *pk)
 }
 void outputjocker(Poker *pk)
 {
-	const char * type[5] = { "ºÚÌÒ","ºìÌÒ","·½Æ¬","Ã·»¨"," ´óÍõ" };
-	const char *point[16] = {"", "A","2","3","4","5","6","7","8","9","10","J","Q","K" ,"",""};
+	const char * type[5] = { "é»‘æ¡ƒ","çº¢æ¡ƒ","æ–¹ç‰‡","æ¢…èŠ±" };
+	 
+
+	const char *point[16] = {"", "A","2","3","4","5","6","7","8","9","10","J","Q","K" ," å¤§çŽ‹","å°çŽ‹"};
 	printf("%s%s\n", type[pk->type], point[pk->point]);
 }
 bool striol(const char *src, int &res)
@@ -82,13 +84,15 @@ void insertsort(Poker* src, int n)
 		src[j] = tmp;
 	}
 }
-int main222()
+int main()
 {
  	Poker p;
+   
 	while (1)
 	{
  		inpointpoker(&p);
- 		while (getchar() != '\n')	
+		while (getchar() != '\n')
+			;
 		outputjocker(&p);
 		puts("");
 	}
